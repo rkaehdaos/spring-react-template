@@ -16,7 +16,7 @@ kotlin = "2.4.0"
 # 프레임워크 / Gradle 플러그인
 springBoot = "4.1.0"
 springDependencyManagement = "1.1.7"
-hibernate = "7.1.12.Final"
+hibernate = "7.4.1.Final"
 graalvmNative = "0.11.5"
 sonarqube = "7.3.0.8198"
 kover = "0.9.8"
