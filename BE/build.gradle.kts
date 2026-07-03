@@ -17,8 +17,7 @@ plugins {
     alias(libs.plugins.kover)
 }
 
-val group = project.property("group") as String
-val releaseVer = project.property("releaseVer") as String
+val releaseVer = providers.gradleProperty("releaseVer").get()
 
 version =
     "$releaseVer-${LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"))}"
