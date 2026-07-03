@@ -17,8 +17,8 @@ plugins {
     alias(libs.plugins.kover)
 }
 
-val group: String by project
-val releaseVer: String by project
+val group = project.property("group") as String
+val releaseVer = project.property("releaseVer") as String
 
 version =
     "$releaseVer-${LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"))}"
