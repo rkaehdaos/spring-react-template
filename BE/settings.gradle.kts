@@ -1,4 +1,4 @@
-rootProject.name = "demo260516"
+rootProject.name = "spring-react-template-BE"
 
 // 플러그인 버전은 gradle/libs.versions.toml (Version Catalog) 에서 일괄 관리.
 // 여기서는 플러그인 저장소만 선언한다.
