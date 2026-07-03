@@ -27,7 +27,7 @@ kotest = "5.9.1"
 kotestExtensionsSpring = "1.3.0"
 mockk = "1.14.11"
 springMockK = "5.0.1"
-archunit = "1.4.1"
+archunit = "1.4.2"
 mockitoKotlin = "6.1.0"
 
 # 강제 버전 (CVE / Java 25 호환성)
