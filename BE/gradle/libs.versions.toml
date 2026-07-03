@@ -11,7 +11,7 @@
 
 [versions]
 # 언어 / 빌드 툴체인
-kotlin = "2.4.0-RC"
+kotlin = "2.4.0"
 
 # 프레임워크 / Gradle 플러그인
 springBoot = "4.0.6"
