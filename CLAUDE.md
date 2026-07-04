@@ -14,7 +14,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### 툴체인 / 환경
 
 - **JDK**: Oracle GraalVM 25 (`BE/mise.toml`로 고정). Kotlin 컴파일은 `jvmToolchain(25)`, `jvmTarget = JVM_25` 기준.
-- **Kotlin**: `2.4.0-RC` (`languageVersion = KOTLIN_2_3`), `allWarningsAsErrors = true` — 경고가 곧 빌드 실패다.
+- **Kotlin**: `2.4.0` (`languageVersion`/`apiVersion` 미지정 → 컴파일러 기본값 추종, 카탈로그 `kotlin` 버전이 단일 관리 지점), `allWarningsAsErrors = true` — 경고가 곧 빌드 실패다.
 - **Gradle**: Wrapper 사용 (`./gradlew`). `configuration-cache`, `parallel`, `caching`, `vfs.watch` 모두 활성화. JVM 인자에 `Asia/Seoul`, UTF-8 인코딩, FFM(`--enable-native-access=ALL-UNNAMED`) 강제.
 - **의존성 검증**: `org.gradle.dependency.verification=strict` — 새 라이브러리 추가 시 검증 메타데이터 갱신 필요.
 

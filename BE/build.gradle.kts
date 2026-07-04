@@ -1,5 +1,4 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.dsl.KotlinVersion
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -48,8 +47,8 @@ kotlin {
         freeCompilerArgs.add("-opt-in=kotlin.RequiresOptIn") // 실험적 API등 API를 사용할 때 해당 옵트인 어노테이션 사용을 허용
         allWarningsAsErrors = true
         jvmTarget.set(JvmTarget.JVM_25)
-        languageVersion.set(KotlinVersion.KOTLIN_2_3)
-        apiVersion.set(KotlinVersion.KOTLIN_2_3)
+        // languageVersion / apiVersion 미지정: 컴파일러(카탈로그 kotlin 버전) 기본값 추종
+        // → 업그레이드 시 카탈로그 한 곳만 관리, 새 경고는 allWarningsAsErrors가 즉시 검출
     }
 }
 
