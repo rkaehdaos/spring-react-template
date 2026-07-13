@@ -30,8 +30,7 @@ springMockK = "5.0.1"
 archunit = "1.4.2"
 mockitoKotlin = "6.3.0"
 
-# 강제 버전 (CVE / Java 25 호환성)
-commonsLang3 = "3.20.0"   # CVE-2025-48924
+# 강제 버전 (Java 25 호환성)
 classgraph = "4.8.184"    # Java 25: sun.misc.Unsafe 사용 중단 대응
 
 [libraries]
@@ -59,7 +58,6 @@ mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "
 archunit-junit5 = { module = "com.tngtech.archunit:archunit-junit5-engine", version.ref = "archunit" }
 
 # 강제 버전 (resolutionStrategy.force)
-commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commonsLang3" }
 classgraph = { module = "io.github.classgraph:classgraph", version.ref = "classgraph" }
 
 [bundles]
