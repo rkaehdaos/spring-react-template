@@ -170,8 +170,6 @@ tasks.named<org.springframework.boot.gradle.tasks.run.BootRun>("bootRun") {
 configurations.all {
     resolutionStrategy {
         preferProjectModules()
-        // Java 25 호환성: sun.misc.Unsafe 사용 중단 이슈 해결
-        force(libs.classgraph)
     }
 }
 sonar {
